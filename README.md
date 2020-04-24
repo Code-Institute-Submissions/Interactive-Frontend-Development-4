@@ -1,6 +1,10 @@
 smooth scroll-snap effect https://www.youtube.com/watch?v=y9nlfqT4s9s
+sticky-top didn't work properly so changed to fixed position of the navbar to the right
 
+hide the sidebar + faq answer reveal: chris coyier
 
+FAQ: Copyright (c) 2020 by joo (https://codepen.io/haechun/pen/QWbbRpo)
+Fork of an original work Bootstrap 4.1 FAQ example with tabs and accordions (https://codepen.io/moso/pen/vKGxMx) 
 
 
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
