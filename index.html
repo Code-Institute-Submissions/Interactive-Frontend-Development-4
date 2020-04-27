@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/lux/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>CORONAVIRUS WORLDWIDE || COVID-19 WORLDWIDE</title>
+	<title>COVID-19 WORLDWIDE || COVID-19 WORLDWIDE</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 					<a class="nav-link" href="#ImpactNHS">Impact on NHS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#Checklist">Coronavirus Checklist</a>
+					<a class="nav-link" href="#Check">Covid-19 Symptoms Checker</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#FAQ">FAQ</a>
@@ -41,7 +41,7 @@
 
 	<section id="Origins" class="section">
 		<div class="container-fluid">
-			<h1>Origins</h1>
+			<br><br><h1>Origins</h1>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt blanditiis veniam facilis
 				exercitationem quaerat alias iusto quam deserunt corrupti ea deleniti dolor laudantium minima, enim vel
 				porro, earum voluptatem dolorum!</p>
@@ -50,19 +50,126 @@
 
 	<section id="ImpactNHS" class="section">
 		<div class="container-fluid">
-			<h1>NHS</h1>
+			<br><br><h1>NHS</h1>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt blanditiis veniam facilis
 				exercitationem quaerat alias iusto quam deserunt corrupti ea deleniti dolor laudantium minima, enim vel
 				porro, earum voluptatem dolorum!</p>
 		</div>
 	</section>
 
-	<section id="Checklist" class="section">
-		<div class="container-fluid">
-			<h1>Economy</h1>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt blanditiis veniam facilis
-				exercitationem quaerat alias iusto quam deserunt corrupti ea deleniti dolor laudantium minima, enim vel
-				porro, earum voluptatem dolorum!</p>
+    <!-- QUIZ -->
+	<section id="Check" class="section">
+		<div class="container text-center">
+        <br><br><h2>Covid-19 Symptoms Checker</h2>
+			<div id="wrapper">
+  <p>Take this questionnaire to find out!</p><br>
+  
+  <form class="mySlides">
+    <h2>Q1/7<br>How many days ago did your symptoms start?</h2>
+    <label><input type="radio" name="q1" value="c1">
+      Zero (If your symptoms started today.)
+    </label><br />
+    <label><input type="radio" name="q1" value="c2">
+      One to Seven
+    </label><br />
+    <label><input type="radio" name="q1" value="c3">
+      Seven+
+    </label><br /><br><br>
+  </form> 
+
+  <form class="mySlides">
+    <h2>Q2/7<br>Do you have a high temperature (fever)?</h2>
+    <label><input type="radio" name="q2" value="c1">
+      Yes
+    </label><br />
+    <label><input type="radio" name="q2" value="c2">
+      I'm not sure
+    </label><br />
+    <label><input type="radio" name="q2" value="c3">
+      No
+    </label><br /><br><br>
+  </form>
+
+  <form class="mySlides">
+    <h2>Q3/7<br>Do you have a new continuous cough?</h2>
+    <span>New: means a cough that you've not had before, or if you usually have a cough, it's got worse.<br>
+Continuous: means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours.<br></span>
+    <label><input type="radio" name="q3" value="c1">
+      Yes
+    </label><br />
+    <label><input type="radio" name="q3" value="c2">
+      I'm not sure
+    </label><br />
+    <label><input type="radio" name="q3" value="c3">
+     No
+    </label><br /><br><br>
+  </form>
+
+  <form class="mySlides">
+    <h2>Q4/7<br>Have you become breathless, or are you more breathless than usual?</h2>
+    <label><input type="radio" name="q4" value="c1">
+      Yes
+    </label><br />
+    <label><input type="radio" name="q4" value="c2">
+      I'm not sure
+    </label><br />
+    <label><input type="radio" name="q4" value="c3">
+      No
+    </label><br /><br><br>
+  </form>
+
+  <form id="" class="mySlides">
+    <h2>Q5/7<br>Are you so breathless that you are unable to speak more than a few words?</h2>
+    <span>This means you are struggling to breathe.</span><br>
+    <label><input type="radio" name="q5" value="c1">
+      Yes
+    </label><br />
+    <label><input type="radio" name="q5" value="c2">
+      I'm not sure
+    </label><br />
+    <label><input type="radio" name="q5" value="c3">
+      No
+    </label><br /><br><br>
+  </form>
+
+  <form id="" class="mySlides">
+    
+    <h2>Q6/7<br>Are you so ill that you've stopped doing all of your usual daily activities?</h2>
+    <span>This means you are struggling to breathe.</span><br>
+    <label><input type="radio" name="q6" value="c1">
+      Yes
+    </label><br />
+    <label><input type="radio" name="q6" value="c2">
+      I'm not sure
+    </label><br />
+    <label><input type="radio" name="q6" value="c3">
+      No
+    </label><br /><br><br>
+  </form>
+
+  <form id="" class="mySlides">
+
+    <h2>Q7/7<br>Have you had a letter from the NHS advising you to shield (isolate) for the next 12 weeks?</h2>
+    <span>People with very serious health conditions have been identified by the NHS, and sent a letter. The letter says you should stay at home for up to 12 weeks and avoid any face-to-face contact with people, unless they're your carers or health professionals (shielding).</span><br>
+    <label><input type="radio" name="q7" value="c1">
+      Yes
+    </label><br />
+    <label><input type="radio" name="q7" value="c2">
+      I'm not sure
+    </label><br />
+    <label><input type="radio" name="q7" value="c3">
+      No
+    </label><br /><br>
+
+  </form>
+  
+<button class="prev" onclick="plusSlides(-1)">Previous Question</button>
+<button class="next" onclick="plusSlides(1)">Next Question</button><br>
+<button type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+ <button type="reset" id="reset" onclick="resetAnswer()">Reset</button><br>
+  
+  <br><div id="answer">Your result will show up here!</div>
+</div>
 		</div>
 	</section>
 
@@ -70,7 +177,7 @@
 	<!--FAQ-->
 	<section id="FAQ" class="section">
 		<div class="container">
-			<div class="row">
+			<br><br><div class="row">
 				<div class="col-lg-4">
 					<div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
 						<a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1"
