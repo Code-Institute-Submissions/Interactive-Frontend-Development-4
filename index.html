@@ -7,13 +7,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/lux/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>COVID-19 WORLDWIDE || COVID-19 WORLDWIDE</title>
+	<title>COVID-19 UK || COVID-19 UK</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 </head>
 
 <body>
 	<section class="head-text">
 		<div class="container text-center">
-			<h1>CORONAVIRUS WORLDWIDE</h1>
+			<h1>COVID-19 IN THE UK</h1>
 		</div>
 	</section>
 	<nav class="navbar navbar-expand-sm navbar-light p-0">
@@ -26,7 +27,7 @@
 					<a class="nav-link" href="#Origins">Origins <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#ImpactNHS">Impact on NHS</a>
+					<a class="nav-link" href="#Stat">Statistics</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#Check">Covid-19 Symptoms Checker</a>
@@ -40,31 +41,27 @@
 	</nav>
 
 	<section id="Origins" class="section">
-		<div class="container-fluid">
-			<br><br><h1>Origins</h1>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt blanditiis veniam facilis
-				exercitationem quaerat alias iusto quam deserunt corrupti ea deleniti dolor laudantium minima, enim vel
-				porro, earum voluptatem dolorum!</p>
+		<div class="container jumbotron">
+			<br><br>
+			<h1>Origins</h1>
+			<p>explain the page after, total stats UK<br /> use api to get these stats</p>
 		</div>
 	</section>
 
-	<section id="ImpactNHS" class="section">
-		<div class="container-fluid">
-			<br><br><h1>NHS</h1>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt blanditiis veniam facilis
-				exercitationem quaerat alias iusto quam deserunt corrupti ea deleniti dolor laudantium minima, enim vel
-				porro, earum voluptatem dolorum!</p>
-		</div>
-	</section>
+
+    <section id="Stat" class="section container jumbotron">
+    <h1 class="text-center">Statistics</h1><br><br>
+    <canvas id="chartUK"></canvas>
+    </section>
 
     <!-- QUIZ -->
 	<section id="Check" class="section">
-		<div class="container text-center">
+		<div class="container jumbotron">
         <br><br><h2>Covid-19 Symptoms Checker</h2>
 			<div id="wrapper">
   <p>Take this questionnaire to find out!</p><br>
   
-  <form class="mySlides">
+  <form class="quizSlides">
     <h2>Q1/7<br>How many days ago did your symptoms start?</h2>
     <label><input type="radio" name="q1" value="c1">
       Zero (If your symptoms started today.)
@@ -77,7 +74,7 @@
     </label><br /><br><br>
   </form> 
 
-  <form class="mySlides">
+  <form class="quizSlides">
     <h2>Q2/7<br>Do you have a high temperature (fever)?</h2>
     <label><input type="radio" name="q2" value="c1">
       Yes
@@ -90,7 +87,7 @@
     </label><br /><br><br>
   </form>
 
-  <form class="mySlides">
+  <form class="quizSlides">
     <h2>Q3/7<br>Do you have a new continuous cough?</h2>
     <span>New: means a cough that you've not had before, or if you usually have a cough, it's got worse.<br>
 Continuous: means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours.<br></span>
@@ -105,7 +102,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     </label><br /><br><br>
   </form>
 
-  <form class="mySlides">
+  <form class="quizSlides">
     <h2>Q4/7<br>Have you become breathless, or are you more breathless than usual?</h2>
     <label><input type="radio" name="q4" value="c1">
       Yes
@@ -118,7 +115,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     </label><br /><br><br>
   </form>
 
-  <form id="" class="mySlides">
+  <form id="" class="quizSlides">
     <h2>Q5/7<br>Are you so breathless that you are unable to speak more than a few words?</h2>
     <span>This means you are struggling to breathe.</span><br>
     <label><input type="radio" name="q5" value="c1">
@@ -132,7 +129,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     </label><br /><br><br>
   </form>
 
-  <form id="" class="mySlides">
+  <form id="" class="quizSlides">
     
     <h2>Q6/7<br>Are you so ill that you've stopped doing all of your usual daily activities?</h2>
     <span>This means you are struggling to breathe.</span><br>
@@ -147,7 +144,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     </label><br /><br><br>
   </form>
 
-  <form id="" class="mySlides">
+  <form id="" class="quizSlides">
 
     <h2>Q7/7<br>Have you had a letter from the NHS advising you to shield (isolate) for the next 12 weeks?</h2>
     <span>People with very serious health conditions have been identified by the NHS, and sent a letter. The letter says you should stay at home for up to 12 weeks and avoid any face-to-face contact with people, unless they're your carers or health professionals (shielding).</span><br>
@@ -163,10 +160,8 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 
   </form>
   
-<button class="prev" onclick="plusSlides(-1)">Previous Question</button>
 <button class="next" onclick="plusSlides(1)">Next Question</button><br>
-<button type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
- <button type="reset" id="reset" onclick="resetAnswer()">Reset</button><br>
+<button type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button><button type="reset" id="reset" onclick="resetAnswer()">Reset</button><br>
   
   <br><div id="answer">Your result will show up here!</div>
 </div>
@@ -176,7 +171,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 
 	<!--FAQ-->
 	<section id="FAQ" class="section">
-		<div class="container">
+		<div class="container jumbotron">
 			<br><br><div class="row">
 				<div class="col-lg-4">
 					<div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
@@ -486,7 +481,8 @@ As, always clean your hands with an alcohol-based hand rub or wash them with soa
 	</section>
 
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+	</script>
 	<script src="js/javascript.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">

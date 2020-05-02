@@ -1,10 +1,14 @@
-smooth scroll-snap effect https://www.youtube.com/watch?v=y9nlfqT4s9s
+smooth scroll-snap effect insp: https://www.youtube.com/watch?v=y9nlfqT4s9s
 sticky-top didn't work properly so changed to fixed position of the navbar to the right
 
+scroll event: https://www.youtube.com/watch?v=V9CY0F4Wc7M
+
+pre filter to speed up download time https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
 
 Insp: FAQ: Copyright (c) 2020 by joo (https://codepen.io/haechun/pen/QWbbRpo)
 Fork of an original work Bootstrap 4.1 FAQ example with tabs and accordions (https://codepen.io/moso/pen/vKGxMx) 
 
+insp for Javascript questionnaire: https://codepen.io/amyfu/pen/oLChg
 
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
