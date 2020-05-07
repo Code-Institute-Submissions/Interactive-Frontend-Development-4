@@ -28,7 +28,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto w-100 justify-content-end">
 				<li class="nav-item">
-					<a class="nav-link" href="#Origins">Origins <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#DaD">Dos and Don'ts <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#Stat">Statistics</a>
@@ -45,20 +45,46 @@
 	</nav>
 
 
-    <!-- ORIGINS -->
-	<section id="Origins" class="section">
+    <!-- Dos and Don'ts -->
+	<section id="DaD" class="section">
 		<div class="container jumbotron">
-			<br><br>
-			<h1>Origins</h1>
-			<p>explain the page after, total stats UK<br /> use api to get these stats</p>
-            <p>table of dos and donts</p>
+            <br><table class="table-borderless table table-hover table-striped">
+  <thead class="dosdontstyle">
+    <tr>
+      <th scope="col">Covid-19 Dos</th>
+      <th scope="col" class="dontscolor">Covid-19 Don’ts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><li>Wash your hands frequently for 20+ seconds with soap and water</li></td>
+      <td class="dontscolor2"><li>Don’t go to crowded areas</li></td>
+    </tr>
+    <tr>
+      <td><li>Stay at home and limit contact with others</li></td>
+      <td class="dontscolor"><li>Don’t touch your face</li></td>
+    </tr>
+    <tr>
+      <td><li>Routinely clean frequently touched spaces in your home</li></td>
+      <td class="dontscolor2"><li>Don’t be in close contact with others</li></td>
+    </tr>
+    <tr>
+      <td><li>Seek medical help if you’re suffering from a fever, cough or difficulty breathing</li></td>
+      <td class="dontscolor"><li>Don’t ignore symptoms</li></td>
+    </tr>
+    <tr>
+      <td><li>Limit contact with pets and animals</li></td>
+      <td class="dontscolor2"><li>Don’t leave your home, especially if sick</li></td>
+    </tr>
+  </tbody>
+</table>	
 		</div>
 	</section>
 
     <!-- STATS -->
     <section id="Stat" class="section text-center container jumbotron">
-    <h1>Statistics</h1><br><br>
-    <div class="box-style"><br><p>Click on the two different datasets for 3 different perspectives:
+    <h1><u>Statistics</u></h1><br><br>
+    <div class="box-style"><br><p>Click on the two different datasets below for 3 different perspectives:
     <li>Only Covid-19 cases</li>
     <li>Only Covid-19 deaths</li>
     <li>Covid-19 cases and deaths</li></p></div><br><br>
@@ -66,14 +92,17 @@
     </section>
 
     <!-- QUIZ -->
+    <!-- Copyright (c) 2020 by Amy (https://codepen.io/amyfu/pen/oLChg)
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 	<section id="Check" class="section">
 		<div class="container jumbotron">
-        <br><br><h1>Covid-19 Symptoms Checker</h1><br>
+        <br><br><h1 class="text-center"><u>Covid-19 Symptoms Checker</u></h1><br>
 			<div id="wrapper">
   <p class="box-style text-center">Take this questionnaire to find out the next best course of action!</p><br>
-  <form class="quizSlides">
+  <form>
     <h3>How many days ago did your symptoms start?</h3>
-    <label><input type="radio" name="q1" value="c1">
+    <label><input type="radio" name="q1" value="c1" required>
       Zero (If your symptoms started today.)
     </label><br />
     <label><input type="radio" name="q1" value="c2">
@@ -81,12 +110,10 @@
     </label><br />
     <label><input type="radio" name="q1" value="c3">
       Seven+
-    </label><br /><br><br>
-  </form> 
+    </label><br /><br><br> 
 
-  <form class="quizSlides">
     <h3>Do you have a high temperature (fever)?</h3>
-    <label><input type="radio" name="q2" value="c1">
+    <label><input type="radio" name="q2" value="c1" >
       Yes
     </label><br />
     <label><input type="radio" name="q2" value="c2">
@@ -95,13 +122,11 @@
     <label><input type="radio" name="q2" value="c3">
       No
     </label><br /><br><br>
-  </form>
 
-  <form class="quizSlides">
     <h3>Do you have a new continuous cough?</h3>
     <span>New: means a cough that you've not had before, or if you usually have a cough, it's got worse.<br>
 Continuous: means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours.</span><br><br>
-    <label><input type="radio" name="q3" value="c1">
+    <label><input type="radio" name="q3" value="c1" >
       Yes
     </label><br />
     <label><input type="radio" name="q3" value="c2">
@@ -110,11 +135,9 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     <label><input type="radio" name="q3" value="c3">
      No
     </label><br /><br><br>
-  </form>
 
-  <form class="quizSlides">
     <h3>Have you become breathless, or are you more breathless than usual?</h3>
-    <label><input type="radio" name="q4" value="c1">
+    <label><input type="radio" name="q4" value="c1" >
       Yes
     </label><br />
     <label><input type="radio" name="q4" value="c2">
@@ -123,12 +146,10 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     <label><input type="radio" name="q4" value="c3">
       No
     </label><br /><br><br>
-  </form>
-
-  <form id="" class="quizSlides">
+  
     <h3>Are you so breathless that you are unable to speak more than a few words?</h3>
     <span>This means you are struggling to breathe.</span><br><br>
-    <label><input type="radio" name="q5" value="c1">
+    <label><input type="radio" name="q5" value="c1" >
       Yes
     </label><br />
     <label><input type="radio" name="q5" value="c2">
@@ -137,12 +158,9 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     <label><input type="radio" name="q5" value="c3">
       No
     </label><br /><br><br>
-  </form>
-
-  <form id="" class="quizSlides">
     
     <h3>Are you so ill that you've stopped doing all of your usual daily activities?</h3>
-    <label><input type="radio" name="q6" value="c1">
+    <label><input type="radio" name="q6" value="c1" >
       Yes
     </label><br />
     <label><input type="radio" name="q6" value="c2">
@@ -151,13 +169,10 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     <label><input type="radio" name="q6" value="c3">
       No
     </label><br /><br><br>
-  </form>
-
-  <form id="" class="quizSlides">
 
     <h3>Have you had a letter from the NHS advising you to shield (isolate) for the next 12 weeks?</h3>
     <span>People with very serious health conditions have been identified by the NHS, and sent a letter. The letter says you should stay at home for up to 12 weeks and avoid any face-to-face contact with people, unless they're your carers or health professionals (shielding).</span><br><br>
-    <label><input type="radio" name="q7" value="c1">
+    <label><input type="radio" name="q7" value="c1" >
       Yes
     </label><br />
     <label><input type="radio" name="q7" value="c2">
@@ -166,18 +181,17 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     <label><input type="radio" name="q7" value="c3">
       No
     </label><br /><br>
-
+    <button class="submit-style" type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button><button class="reset-style" type="reset" id="reset" onclick="resetAnswer()">Reset</button><br>
   </form>
-
-<!-- <button class="next" onclick="plusSlides(1)">Next Question</button><br> -->
-<button class="submit-style" type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button><button class="reset-style" type="reset" id="reset" onclick="resetAnswer()">Reset</button><br>
-  
-  <br><div id="answer">Your result will show up here!</div>
+<br><div id="answer">Your result will show up here!</div>
 </div>
 		</div>
 	</section>
 
 	<!--FAQ-->
+    <!-- Copyright (c) 2020 by Morten Sørensen (https://codepen.io/moso/pen/vKGxMx)
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 	<section id="FAQ" class="section">
 		<div class="container jumbotron">
 			<br><br><div class="row">
@@ -491,7 +505,7 @@ As, always clean your hands with an alcohol-based hand rub or wash them with soa
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
 	</script>
-	<script src="js/javascript.js"></script>
+	<script src="js/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 	</script>

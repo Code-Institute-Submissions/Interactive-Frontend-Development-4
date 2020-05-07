@@ -14,23 +14,38 @@ As a nurse, I want to make sure misinformation isn't being spread, so that the g
 
 ## Features
 Bootstrap features such as the navbar, in conjuction with the jQuery smooth scroll, have been implemented to create a sleek and simple navigation tool that'll snap to the sections of page when clicked upon.
+
 Chart.js allowed me to creative responsive and interactive statistical graphs which the user may interact with.
+
 The form feature allows users to take part in a symptoms check up questionnaire which gives users different answers based on their answers. Users may also reset their answers to give new ones. This was solely allowed to work with the help of javascript.
+
 A few other boostrap feaures (collapse, show, nav-pills) allowed for a well put together faq section. This allows the user to experience a neat and sleek way to obtain information upon clicking the question.
+
 A "bottom of page" javascript code intiates messages once users have made their way through and to the bottom of the website.
+
+When on mobile devices with a width of <576px I used JQuery code that automatically closes the navbar when a link is clicked.
+
 Future additional features: a next/previous slideshow of the questionnaire.
 
 ## Technologies Used
 - HTML: to structure and layout web content
 - CSS: it is fundamental to web design and how it looks
 - Bootstrap (4.3.1): it gives me a solid foundation of which I can build upon
-- Query: a smooth scroll is used to give the user a seamless switch between sections
+- JQuery: a smooth scroll is used to give the user a seamless switch between sections
 - Javascript: allows me to create more user interaction, for example within the questionnaire it allows multiple answers to be shown based on the answers submitted as well as reset those options.
 
-##Testing
-tested microsoft edge: fine
+## Testing
+
+devices tested: tested microsoft edge: fine
+
 internet explorer: graph does not load and bullet points are outside of the box
+
+resolution tested eg iphone x (specs, is it supported?) ipad
+
+links working, stats fine, quiz working, faq running as intended
+
 to be completed.
+
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
@@ -50,17 +65,18 @@ You should also mention in this section any interesting bugs or problems you dis
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
-I deployed my site to Github pages directly from the master branch. The deployed site will update automatically upon new commits to said branch. In order for the site to deploy correctly on GitHub pages, the landing page has been named index.html.
+I deployed my site to Github pages directly from the master branch. [steps i done to upload it] The deployed site will update automatically upon new commits to said branch. In order for the site to deploy correctly on GitHub pages, the landing page has been named index.html.
 To run locally, you can clone this repository directly into the editor of your choice by pasting "git clone https://github.com/alexrem1/Interactive-Frontend_Development.git" into your terminal. To cut ties with this GitHub repository, type "git remote rm origin" into the terminal.
 
 ## Credits
 Content: All content from my project was produced by except from
-- FAQ: Copyright (c) 2020 by <a href="https://codepen.io/moso/pen/vKGxMx">Morten Sørensen</a>
-- Statistics Data converted into filtered UK data:<a href="https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases">ECDC</a> 
-- Part of the questionnaire: Copyright (c) 2020 by <a href="https://codepen.io/amyfu/pen/oLChg">Amy</a>
+- The frequenly asked question design: <a href="https://codepen.io/moso/pen/vKGxMx">Morten Sørensen</a>
+- Statistics Data converted into filtered UK data <a href="https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases">ECDC</a> 
+- Questionnaire design and Javascript: <a href="https://codepen.io/amyfu/pen/oLChg">Amy</a>
 - <a href="https://www.youtube.com/watch?v=V9CY0F4Wc7M">Scroll event</a> 
 - <a href="https://youtu.be/y9nlfqT4s9s?t=1025">Smooth scroll JQuery</a> 
-Media: the logo created for use in this site was obtained from <a href="https://www.freelogodesign.org/"</a>
+
+Media: the logo created for use in this site was obtained from <a href="https://www.freelogodesign.org/">here.</a>
 
 ## Acknowledgements
 I received some inspiration for this project from the NHS 111.
