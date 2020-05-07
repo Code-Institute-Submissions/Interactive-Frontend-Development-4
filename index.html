@@ -12,11 +12,15 @@
 </head>
 
 <body>
+    <!-- TOP OF PAGE -->
 	<section class="head-text">
 		<div class="container text-center">
-			<h1>COVID-19 IN THE UK</h1>
+			<img src="Logo/covid-logo.png"><br><br>
+            <h1 class="box-style">COVID-19 IN THE UK</h1>
 		</div>
 	</section>
+
+    <!-- NAVBAR -->
 	<nav class="navbar navbar-expand-sm navbar-light p-0">
 		<button class="navbar-toggler navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,29 +44,35 @@
 		</div>
 	</nav>
 
+
+    <!-- ORIGINS -->
 	<section id="Origins" class="section">
 		<div class="container jumbotron">
 			<br><br>
 			<h1>Origins</h1>
 			<p>explain the page after, total stats UK<br /> use api to get these stats</p>
+            <p>table of dos and donts</p>
 		</div>
 	</section>
 
-
-    <section id="Stat" class="section container jumbotron">
-    <h1 class="text-center">Statistics</h1><br><br>
+    <!-- STATS -->
+    <section id="Stat" class="section text-center container jumbotron">
+    <h1>Statistics</h1><br><br>
+    <div class="box-style"><br><p>Click on the two different datasets for 3 different perspectives:
+    <li>Only Covid-19 cases</li>
+    <li>Only Covid-19 deaths</li>
+    <li>Covid-19 cases and deaths</li></p></div><br><br>
     <canvas id="chartUK"></canvas>
     </section>
 
     <!-- QUIZ -->
 	<section id="Check" class="section">
 		<div class="container jumbotron">
-        <br><br><h2>Covid-19 Symptoms Checker</h2>
+        <br><br><h1>Covid-19 Symptoms Checker</h1><br>
 			<div id="wrapper">
-  <p>Take this questionnaire to find out!</p><br>
-  
+  <p class="box-style text-center">Take this questionnaire to find out the next best course of action!</p><br>
   <form class="quizSlides">
-    <h2>Q1/7<br>How many days ago did your symptoms start?</h2>
+    <h3>How many days ago did your symptoms start?</h3>
     <label><input type="radio" name="q1" value="c1">
       Zero (If your symptoms started today.)
     </label><br />
@@ -75,7 +85,7 @@
   </form> 
 
   <form class="quizSlides">
-    <h2>Q2/7<br>Do you have a high temperature (fever)?</h2>
+    <h3>Do you have a high temperature (fever)?</h3>
     <label><input type="radio" name="q2" value="c1">
       Yes
     </label><br />
@@ -88,9 +98,9 @@
   </form>
 
   <form class="quizSlides">
-    <h2>Q3/7<br>Do you have a new continuous cough?</h2>
+    <h3>Do you have a new continuous cough?</h3>
     <span>New: means a cough that you've not had before, or if you usually have a cough, it's got worse.<br>
-Continuous: means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours.<br></span>
+Continuous: means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours.</span><br><br>
     <label><input type="radio" name="q3" value="c1">
       Yes
     </label><br />
@@ -103,7 +113,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
   </form>
 
   <form class="quizSlides">
-    <h2>Q4/7<br>Have you become breathless, or are you more breathless than usual?</h2>
+    <h3>Have you become breathless, or are you more breathless than usual?</h3>
     <label><input type="radio" name="q4" value="c1">
       Yes
     </label><br />
@@ -116,8 +126,8 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
   </form>
 
   <form id="" class="quizSlides">
-    <h2>Q5/7<br>Are you so breathless that you are unable to speak more than a few words?</h2>
-    <span>This means you are struggling to breathe.</span><br>
+    <h3>Are you so breathless that you are unable to speak more than a few words?</h3>
+    <span>This means you are struggling to breathe.</span><br><br>
     <label><input type="radio" name="q5" value="c1">
       Yes
     </label><br />
@@ -131,8 +141,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 
   <form id="" class="quizSlides">
     
-    <h2>Q6/7<br>Are you so ill that you've stopped doing all of your usual daily activities?</h2>
-    <span>This means you are struggling to breathe.</span><br>
+    <h3>Are you so ill that you've stopped doing all of your usual daily activities?</h3>
     <label><input type="radio" name="q6" value="c1">
       Yes
     </label><br />
@@ -146,8 +155,8 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 
   <form id="" class="quizSlides">
 
-    <h2>Q7/7<br>Have you had a letter from the NHS advising you to shield (isolate) for the next 12 weeks?</h2>
-    <span>People with very serious health conditions have been identified by the NHS, and sent a letter. The letter says you should stay at home for up to 12 weeks and avoid any face-to-face contact with people, unless they're your carers or health professionals (shielding).</span><br>
+    <h3>Have you had a letter from the NHS advising you to shield (isolate) for the next 12 weeks?</h3>
+    <span>People with very serious health conditions have been identified by the NHS, and sent a letter. The letter says you should stay at home for up to 12 weeks and avoid any face-to-face contact with people, unless they're your carers or health professionals (shielding).</span><br><br>
     <label><input type="radio" name="q7" value="c1">
       Yes
     </label><br />
@@ -159,15 +168,14 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
     </label><br /><br>
 
   </form>
-  
-<button class="next" onclick="plusSlides(1)">Next Question</button><br>
-<button type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button><button type="reset" id="reset" onclick="resetAnswer()">Reset</button><br>
+
+<!-- <button class="next" onclick="plusSlides(1)">Next Question</button><br> -->
+<button class="submit-style" type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button><button class="reset-style" type="reset" id="reset" onclick="resetAnswer()">Reset</button><br>
   
   <br><div id="answer">Your result will show up here!</div>
 </div>
 		</div>
 	</section>
-
 
 	<!--FAQ-->
 	<section id="FAQ" class="section">
@@ -314,7 +322,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 												to such care.
 
 												Possible vaccines and some specific drug treatments are currently under
-												investigation. They are being tested through clinical trials. WHO is
+												investigation. They are being tested through clinical trials. "WHO" is
 												coordinating efforts to develop vaccines and medicines to prevent and
 												treat COVID-19.
 
@@ -344,7 +352,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 										aria-labelledby="accordion-tab-1-heading-6" data-parent="#accordion-tab-1">
 										<div class="card-body">
 											<p>Stay aware of the latest information on the COVID-19 outbreak, available
-												on the WHO website and through your national and local public health
+												on the "WHO" website and through your national and local public health
 												authority. Most countries around the world have seen cases of COVID-19
 												and many are experiencing outbreaks. Authorities in China and some other
 												countries have succeeded in slowing their outbreaks. However, the
@@ -392,7 +400,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 														the right health facility. This will also protect you and help
 														prevent spread of viruses and other infections.</li>
 													<li>Keep up to date on the latest information from trusted sources,
-														such as WHO or your local and national health authorities. Why?
+														such as "WHO" or your local and national health authorities. Why?
 														Local and national authorities are best placed to advise on what
 														people in your area should be doing to protect themselves.</li>
 												</ul>
@@ -404,7 +412,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 								<div class="card">
 									<div class="card-header" id="accordion-tab-1-heading-7">
 										<h5>
-											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-7" aria-expanded="false" aria-controls="accordion-tab-1-content-7">Does WHO recommend wearing medical masks to prevent the spread of COVID-19?</button>
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-7" aria-expanded="false" aria-controls="accordion-tab-1-content-7">Does "WHO" recommend wearing medical masks to prevent the spread of COVID-19?</button>
 										</h5>
 									</div>
 									<div class="collapse" id="accordion-tab-1-content-7"
@@ -412,7 +420,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 										<div class="card-body">
 											<p>Currently, there is not enough evidence for or against the use of masks
 												(medical or other) in healthy individuals in the wider community.
-												However, WHO is actively studying the rapidly evolving science on masks
+												However, "WHO" is actively studying the rapidly evolving science on masks
 												and continuously updates its guidance.<br><br>
 
 												<em>Medical masks</em> are recommended primarily in health care
@@ -431,7 +439,7 @@ Continuous: means coughing a lot for more than an hour, or 3 or more coughing ep
 												<em>People who are sick and exhibiting symptoms of COVID-19</em><br>
 												<em>Why?</em> Anyone who is sick, with mild symptoms such as muscle
 												aches, slight cough, sore throat or fatigue, should isolate at home and
-												use a medical mask according to WHO’s recommendation on home care of
+												use a medical mask according to "WHO"’s recommendation on home care of
 												patients with suspected COVID-19. Coughing, sneezing or talking can
 												generate droplets that cause can spread the infection. These droplets
 												can reach the face of others nearby and land on the surrounding

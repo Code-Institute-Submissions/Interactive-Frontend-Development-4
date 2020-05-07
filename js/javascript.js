@@ -10,32 +10,39 @@ async function chartIt() {
             labels: data.xs,
             datasets: [
                 {
-                label: 'COVID-19 cases in the UK',
-                data: data.ys,
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 5
-            },
-        {
-            label: 'COVID-19 deaths in the UK',
-                data: data.zs,
-                fill: false,
-                borderColor: 'rgba(173, 122, 30, 1)',
-                borderWidth: 5
-        }],
+                    label: 'COVID-19 cases in the UK',
+                    data: data.ys,
+                    borderColor: 'rgba(0, 0, 0, 0.7)',
+                    borderWidth: 5,
+                },
+                {
+                    label: 'COVID-19 deaths in the UK',
+                    data: data.zs,
+                    borderColor: 'rgba(173, 122, 30, 1)',
+                    borderWidth: 5,
+                    hidden: true,
+                }],
         },
         options: {
-          scales: { 
-          gridLines: {
-					display: true,
-					drawBorder: true,
-					drawOnChartArea: false},
-            xAxes: [{
-              scaleLabel: {
-                // display: true,
-                // labelString: 'Day, month, year of reporting'
-              },
-            }],
-          },
+            scales: {
+                gridLines: {},
+                xAxes: [{
+                    scaleLabel: {
+                        // display: true,
+                        // labelString: 'Day, month, year of reporting'
+                    },
+                     gridLines: {
+                drawOnChartArea: false
+            },
+                }],
+                yAxes: [{
+                     gridLines: {
+                drawOnChartArea: false
+            }
+                }],
+                Labels: {
+                }
+            },
         },
     });
 }
@@ -60,7 +67,7 @@ async function getData() {
         zs.push(deaths);
         console.log(date, cases, deaths);
     });
-    return { xs, ys, zs};
+    return { xs, ys, zs };
 }
 
 // Smooth scroll
@@ -87,6 +94,7 @@ window.addEventListener("scroll", () => {
         alert("You have reached the bottom.");
         alert("I hope you have enjoyed my website which is intended for educational demonstrations only.");
         alert("REMEMBER: follow government guidelines and stay indoors unless you need essential items, you are part of the essential workforce and/or need to exercise!");
+        alert("Let's all do our bit to flatten the curve and protect the NHS! Have a good day.");
     }
 });
 
@@ -132,23 +140,25 @@ function tabulateAnswers() {
 function resetAnswer() {
     var answerbox = document.getElementById('answer');
     answerbox.innerHTML = "Your result will show up here!";
+    var choices = document.getElementsByTagName("input");
+    for (var i = 0; i < choices.length; ++i) { choices[i].checked = false; }
 }
 
-//Slides
+// //Slides
 
-var slideAtOne = 1;
-showSlides(slideAtOne);
+// var slideAtOne = 1;
+// showSlides(slideAtOne);
 
-function plusSlides(n) {
-    showSlides(slideAtOne += n);
-}
+// function plusSlides(n) {
+//     showSlides(slideAtOne += n);
+// }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("quizSlides");
-    if (n > slides.length) { slideAtOne = 1 }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideAtOne - 1].style.display = "block";
-}
+// function showSlides(n) {
+//     var i;
+//     var slides = document.getElementsByClassName("quizSlides");
+//     if (n > slides.length) { slideAtOne = 1 }
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     slides[slideAtOne - 1].style.display = "block";
+// }

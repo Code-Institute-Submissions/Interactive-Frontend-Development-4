@@ -1,7 +1,6 @@
 body {
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Helvetica', Courier New, monospace;
 background: #60535326;
-color: black;
 line-height: 1.6;
 height:100vh;
 }
@@ -17,14 +16,38 @@ height:100vh;
 
 
 .section{
-    height: 160vh;
+    /* height: 160vh; */
     width: 100%;
+    min-height: 200px;
 }
 
 .container-fluid{
     padding-left: 0;
     padding-right: 0;
 }
+
+.box-style{
+    border-style: solid;
+    box-shadow: rgb(160, 53, 53) 0px 1px 5px;
+    text-shadow: 1px 0px 0px black;
+    background-color: yellow;
+}
+
+.submit-style{
+    box-shadow: rgb(160, 53, 53) 0px 1px 5px;
+    text-shadow: 1px 0px 0px black;
+    background-color: #13e500;
+}
+
+.reset-style{
+    box-shadow: rgb(160, 53, 53) 0px 1px 5px;
+    text-shadow: 1px 0px 0px black;
+    background-color: #ff2a2a;
+}
+
+
+
+/* //NAVBAR */
 
 .navbar{
     position: fixed;
@@ -33,7 +56,18 @@ height:100vh;
     z-index: 1020;
 }
 
-// faq
+.navbar-toggler {
+    border-color: rgba(0,0,0,0);
+    border-style: none;
+}
+
+.navbar-collapse.collapse.show {
+    background-color: #e7e5e5;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+/* // faq */
 
 .faq-nav {
     flex-direction: column;
@@ -73,7 +107,7 @@ height:100vh;
     }
 }
 
-// TAB CONTENT
+/* // TAB CONTENT */
 .tab-content {
     box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
     
@@ -121,7 +155,7 @@ height:100vh;
 }
 
 
-// BORDER FIX
+/* // BORDER FIX */
 .accordion {
     > .card {
         &:not(:first-child) {
@@ -136,4 +170,4 @@ height:100vh;
     }
 }
 
-//QUIZ
+/* //QUIZ */
