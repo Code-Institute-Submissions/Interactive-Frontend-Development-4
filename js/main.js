@@ -88,7 +88,7 @@ $(".navbar a").on("click", function (e) {
  $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
     });
-
+  
 // Bottom of the page
 window.addEventListener("scroll", () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;

@@ -3,7 +3,7 @@
 ## Project 2: Interactive Frontend Development - Code Institute
 The purpose of my website is to attract web traffic from consumers who are looking for knowledge of the latest diesease,  the coronavirus, which also known as covid-19. With the sudden and global impact cause by this disastrous disease, now more than ever, it is vital to produce accurate information that'll help keep people safe, knowledgeable and prevent the spread of covid-19. 
 
-A live demo can be seen <a href="">here</a>.
+A live demo can be seen <a href="https://alexrem1.github.io/Interactive-Frontend-Development/">here</a>.
 
 ## UX
 My website is for everyone and anyone that may potentially be affected by this global pandemic. I want consumers to be able to soak of information provided on my website that will keep them safe, prevent the spread of the disease and ultimately flatten the curve. I aim to do so with a sleek and modern looking website, eye catching statistical information, a self-help section, a frequently asked question section, a dos and don'ts table and a by nature, a bold yet simplistic color scheme.
@@ -25,7 +25,6 @@ A "bottom of page" javascript code intiates messages once users have made their 
 
 When on mobile devices with a width of <576px I used JQuery code that automatically closes the navbar when a link is clicked.
 
-Future additional features: a next/previous slideshow of the questionnaire.
 
 ## Technologies Used
 - HTML: to structure and layout web content
@@ -65,7 +64,8 @@ You should also mention in this section any interesting bugs or problems you dis
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
-I deployed my site to Github pages directly from the master branch. [steps i done to upload it] The deployed site will update automatically upon new commits to said branch. In order for the site to deploy correctly on GitHub pages, the landing page has been named index.html.
+I deployed my site to Github pages directly from the master branch. Initially a new empty repository should be created via the "git init" command. Once my project was completely finished I typed "git status" in the command terminal. This command displays the state of the working directory and the staging area. It lets me see which changes have been staged, which haven't, and which files aren't being tracked by Git. My project files had been changed and needed to be added to the staging area ready for a commit and I do this with this by typing "git add (file path and/or file name)". Once all files have been added to the staging area I am now ready to commit, to do this I issue this command in the terminal "git commit -m "(messages explaining what you are committing)". Now that is done, I am are ready to push my code to our remote repository with the command "git push". The deployed site will update automatically upon new commits to said branch. In order for the site to deploy correctly on GitHub pages, the landing page has been named index.html.
+
 To run locally, you can clone this repository directly into the editor of your choice by pasting "git clone https://github.com/alexrem1/Interactive-Frontend_Development.git" into your terminal. To cut ties with this GitHub repository, type "git remote rm origin" into the terminal.
 
 ## Credits
