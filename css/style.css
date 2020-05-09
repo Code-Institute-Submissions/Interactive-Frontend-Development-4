@@ -1,3 +1,4 @@
+/* BODY */
 body {
 font-family: 'Helvetica', Courier New, monospace;
 background: #60535326;
@@ -5,26 +6,23 @@ line-height: 1.6;
 height:100vh;
 }
 
+/* TOP OF PAGE */
 .head-text{
     padding-top: 75px;
     padding-bottom: 45px;
 }
 
+/* MAIN SECTIONS */
 .jumbotron{
     border-radius: 70px;
 }
-
 
 .section{
     width: 100%;
     min-height: 200px;
 }
 
-.container-fluid{
-    padding-left: 0;
-    padding-right: 0;
-}
-
+/* ATTENTION PLEASE */
 .box-style{
     border-style: solid;
     box-shadow: rgb(160, 53, 53) 0px 1px 5px;
@@ -58,12 +56,12 @@ height:100vh;
     background-color: #ffff008c;
 }
 
+/* TABLE */
 table {
     border-collapse: separate;
 }
 
-/* //NAVBAR */
-
+/* NAVBAR */
 .navbar{
     position: fixed;
     top: 0;

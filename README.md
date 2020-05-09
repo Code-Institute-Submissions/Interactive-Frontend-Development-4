@@ -35,33 +35,50 @@ When on mobile devices with a width of <576px I used JQuery code that automatica
 
 ## Testing
 
-devices tested: tested microsoft edge: fine
+I have tested my website manually in the following ways:
 
-internet explorer: graph does not load and bullet points are outside of the box
+1. Links:
+    1. Clicked on the link
+    2. Smooth scroll worked as intended and transitioned to the corresponding section.
 
-resolution tested eg iphone x (specs, is it supported?) ipad
+2. Bar Chart:
+    1. unhide hidden "COVID-19 deaths in the UK" by clicking on the corresponding legend and then hide it
+    2. hide "COVID-19 cases in the UK" by clicking on the corresponding legend and then unhide it
+    3. Hover over the individual dates on the graph for a summary of what occured that eg cases and/or deaths
+    4. All actions worked as intended.
+    5. However, I did notice that even with the "required" attribute in place, I was still able to click submit and recieve the default questionnaire answer outcome.
 
-links working, stats fine, quiz working, faq running as intended
+3. Questionnaire:
+    1. Fill in answers for each question by clicking on desired options
+    2. Click on submit to reveal outcome of selected answers
+    3. Click on reset to reset the checked options and to hide the revealed questionnaire answer outcome
+    4. All actions worked as intended.
 
-to be completed.
+4. FAQ:
+    1. Click on a frequently asked question to reveal the answer
+    2. Click on it again to hide the answer
+    3. All actions work as intended.
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+5. Scrolled to the bottom:
+    1. Scroll to the bottom
+    2. Make my way through the pop up alerts
+    3. All actions worked as intended
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+I have tested my website on
+- Google Chrome
+- Firefox
+- Microsoft Edge
+Compatability and functionality all work the same across all three browsers and work as intended.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Different screen sizes I have tested my website on include
+- my laptop that has a screen size of 1171.2px(width) and 57.6px(height)
+- my iPhone XS that has a 267.84px(width) and 542.4px(height)
+- a macbook air that has 2560px(width) and 1600px(height)
+- various chrome developer tools:
+    - iPhone X 375px(width) and 812px(height)
+    - iPad 768px(width) and 1024px(height)
+    - iPad Pro 1024px(width) and 1366px(height)
+Compatability and functionality all work the same across all three browsers and work as intended.
 
 ## Deployment
 I deployed my site to Github pages directly from the master branch. Initially a new empty repository should be created via the "git init" command. Once my project was completely finished I typed "git status" in the command terminal. This command displays the state of the working directory and the staging area. It lets me see which changes have been staged, which haven't, and which files aren't being tracked by Git. My project files had been changed and needed to be added to the staging area ready for a commit and I do this with this by typing "git add (file path and/or file name)". Once all files have been added to the staging area I am now ready to commit, to do this I issue this command in the terminal "git commit -m "(messages explaining what you are committing)". Now that is done, I am are ready to push my code to our remote repository with the command "git push". The deployed site will update automatically upon new commits to said branch. In order for the site to deploy correctly on GitHub pages, the landing page has been named index.html.
