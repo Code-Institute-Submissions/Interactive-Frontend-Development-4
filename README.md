@@ -42,8 +42,8 @@ I have tested my website manually in the following ways:
     2. Smooth scroll worked as intended and transitioned to the corresponding section.
 
 2. Bar Chart:
-    1. unhide hidden "COVID-19 deaths in the UK" by clicking on the corresponding legend and then hide it
-    2. hide "COVID-19 cases in the UK" by clicking on the corresponding legend and then unhide it
+    1. Unhide hidden "COVID-19 deaths in the UK" by clicking on the corresponding legend and then hide it
+    2. Hide "COVID-19 cases in the UK" by clicking on the corresponding legend and then unhide it
     3. Hover over the individual dates on the graph for a summary of what occured that eg cases and/or deaths
     4. All actions worked as intended.
     5. However, I did notice that even with the "required" attribute in place, I was still able to click submit and recieve the default questionnaire answer outcome.
